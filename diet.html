@@ -1,0 +1,201 @@
+Diet.html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" -->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+   <link rel="stylesheet" href="css/themes/blue.css" />
+    <link rel="stylesheet"                 href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Diet</title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    <div data-role="page" id="diet" data-theme="b">
+        <div data-role="header"><h1>Diet</h1></div>
+        <div data-role="navbar" data-iconpos="bottom">
+            <ul>
+                <li><a href="index.html" id="home1" data-icon="home">Index</a></li>
+                <li><a href="goals.html" id="grid1" data-icon="grid">Goals</a></li>
+                <li><a href="exercise.html" id="star1" data-icon="star" >Exercise</a></li>
+                <li><a href="diet.html" id="gear1" data-icon="gear" class="ui-btn-active">Diet</a></li>
+            </ul>
+        </div>
+        <div role="main" class="ui-content">
+            <h2 class="center1">Diet for Fitness</h2>
+           <iframe width="400" height="300" src="https://www.youtube.com/embed/H-6Qm9KPcmA?autoplay=0" align="middle" id="healthy"></iframe> 
+            <br><br>
+            
+            <h2 class="center1">Healthy Recipes</h2>
+            
+            <img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/coconut-lime-chicken-zucchini-fries-1109.jpg?itok=cLHfrQml" id="pic1" >
+            <button id="prep1">Preparation</button>
+                <div id="nutrition1">
+            
+            <fieldset data-role="controlgroup">
+    <legend>Ingredients:</legend>
+    <input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+    <label for="checkbox-1a">Eggs</label>
+    <input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+    <label for="checkbox-2a">Chicken</label>
+    <input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+    <label for="checkbox-3a">Broccoli</label>
+    <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+    <label for="checkbox-4a">Avacado</label>
+</fieldset>
+    <h3>Method</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Nutional info</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+        
+        
+        
+            
+            
+            <img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/bbq-chicken-cucumber-salad-1109.jpg?itok=V6bSHClZ" id="pic2">
+            
+        
+         <button id="prep2">Preparation</button>
+                <div id="nutrition2">
+            
+            <fieldset data-role="controlgroup">
+    <legend>Ingredients:</legend>
+    <input type="checkbox" name="checkbox-1a" id="checkbox-1b" checked="" >
+    <label for="checkbox-1b">Eggs</label>
+    <input type="checkbox" name="checkbox-2a" id="checkbox-2b">
+    <label for="checkbox-2b">Chicken</label>
+    <input type="checkbox" name="checkbox-3a" id="checkbox-3b">
+    <label for="checkbox-3b">Broccoli</label>
+    <input type="checkbox" name="checkbox-4a" id="checkbox-4b">
+    <label for="checkbox-4b">Avacado</label>
+</fieldset>
+    <h3>Method</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Nutional info</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            
+           
+    
+ 
+            
+            <img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/bbq-tilapia-mango-salsa-1109.jpg?itok=m9I0M1d0" id="pic3" >
+        
+        <button id="prep3">Preparation</button>
+                <div id="nutrition3">
+            
+            <fieldset data-role="controlgroup">
+    <legend>Ingredients:</legend>
+    <input type="checkbox" name="checkbox-1a" id="checkbox-1c" checked="" >
+    <label for="checkbox-1c">Eggs</label>
+    <input type="checkbox" name="checkbox-2a" id="checkbox-2c">
+    <label for="checkbox-2c">Chicken</label>
+    <input type="checkbox" name="checkbox-3a" id="checkbox-3c">
+    <label for="checkbox-3c">Broccoli</label>
+    <input type="checkbox" name="checkbox-4a" id="checkbox-4c">
+    <label for="checkbox-4c">Avacado</label>
+</fieldset>
+    <h3>Method</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Nutional info</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> 
+            
+            
+        
+        
+        </div></div>
+    
+    
+    
+         
+  
+         
+         
+    
+    
+            
+    
+             
+             
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+ 
+          $(document).on("pagecreate", function() {
+            $(document).on("pagecontainershow", function(){
+                $(".ui-content").height(getRealContentHeight());
+            })
+               
+            $(window).on("resize orientationchange", function(){
+                $(".ui-content").height(getRealContentHeight());
+            })
+            
+            function getRealContentHeight() {
+                var activePage = $.mobile.pageContainer.pagecontainer("getActivePage"),
+                screen = $.mobile.getScreenHeight(),
+                header = $(".ui-header").hasClass("ui-header-fixed") ? $(".ui-header").outerHeight() - 1 : $(".ui-header").outerHeight(),
+                footer = $(".ui-footer").hasClass("ui-footer-fixed") ? $(".ui-footer").outerHeight() - 1 : $(".ui-footer").outerHeight(),
+                contentMargins = $(".ui-content", activePage).outerHeight() - $(".ui-content", activePage).height();
+                var contentHeight = screen - header - footer - contentMargins;    
+                
+                return contentHeight;
+            }
+          
+              
+       
+              
+        });
+        
+        $("#nutrition1").hide();
+        
+        $("#prep1").on('click', function() {
+           $("#nutrition1").slideToggle(); 
+        });
+    
+         $("#nutrition2").hide();
+        
+        $("#prep2").on('click', function() {
+           $("#nutrition2").slideToggle(); 
+        });
+        
+         $("#nutrition3").hide();
+        
+        $("#prep3").on('click', function() {
+           $("#nutrition3").slideToggle(); 
+        });
+        
+        app.initialize(); 
+    </script>
+</body>
+
+</html>
