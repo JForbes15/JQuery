@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <!--meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" -->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+        <link rel="stylesheet" href="css/themes/blue.css" />
+        <link rel="stylesheet"                 href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Exercise</title>
+    </head>           
+    
+    <body>
+    
+        <div data-role="page" id="exercise" data-theme="b">
+            <div data-role="header"><h1>Exercise</h1></div>
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="index.html" id="home1" data-icon="home">Index</a></li>
+                    <li><a href="goals.html" id="grid1" data-icon="grid">Goals</a></li>
+                    <li><a href="exercise.html" id="star1" data-icon="star" class="ui-btn-active">Exercise</a></li>
+                    <li><a href="diet.html" id="gear1" data-icon="gear">Diet</a></li>
+                    <li><a href="#Workouts" id="search1" data-icon="search" >Workouts</a></li>
+                </ul>
+            </div>
+        
+                
+            <div role="main" class="ui-content">
+                <h2>Muscle Groups</h2>
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#chestmuscles">
+                    <img src="https://cdn.muscleandstrength.com/sites/all/themes/mnsnew/images/taxonomy/exercises/musclegroups/full/Chest-full.jpg" width="100">
+                    <h2>Chest</h2>
+                    <p>Chest Exercises</p></a>
+                    </li>
+                    
+                    <li><a href="#legmuscles">
+                    <img src="https://artifacts.bbcomcdn.com/exercises-app/1.1.0/img/guide-7.gif" width="100">
+                    <h2>Legs</h2>
+                    <p>Leg Exercises</p></a>
+                    </li>
+                    
+                    <li><a href="#armmuscles">
+                    <img src="https://cdn.muscleandstrength.com/sites/all/themes/mnsnew/images/taxonomy/exercises/musclegroups/full/Biceps-full.jpg" width="100">
+                    <h2>Arms</h2>
+                    <p>Arm Exercises</p></a>
+                    </li>
+                    
+                    <li><a href="#absmuscles">
+                    <img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/muscular-abs_5_1.jpg?itok=DTAbUmIm" width="100" height="80">
+                    <h2>Abs</h2>
+                    <p>Abs Exercises</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     
+        
+        
+        <div data-role="page" id="chestmuscles" data-theme="b">
+            <div data-role="header"><h1>Chest</h1></div>
+            <a href="exercise.html" id="chat" data-icon="grid" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
+            <div role="main" class="ui-content">
+            <h3>Chest Exercises</h3>
+            <div><h3>Barbell Bench Press</h3>
+            <div><img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/media/Bench-Press-Main-800x800.jpg" width="300" height="300" class="examplepic" /></div>
+            <div>
+                <p class="description" id="muscles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="clear">
+                <button id="expand1">Add to Workout?</button>
+            
+            </div>
+            </div> 
+  
+            
+             <div class="clear"><h3>Pressups</h3>
+                <img src="https://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/push_ups_main_0.jpg" width="300" height="300" class="examplepic"/>
+                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="clear">
+                <button id="expand2">Add to Workout?</button>
+            </div>
+                
+             <div class="clear"><h3>Incline Dumbell Press</h3>
+                <img src="https://www.womenshealthmag.com/sites/womenshealthmag.com/files/images/0703_inc_dbel_press.jpg" width="300" height="300" class="examplepic"/>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <button id="expand3">Add to Workout?</button>
+            <div id="add3">
+                <label for="text-basic">Exercise:</label>
+                <input type="text" data-mini="true" name="type" placeholder="Name of Exercise" value="" id="type"/>
+                
+                <label for="text-basic">weight:</label>
+                <input type="number" data-mini="true" name="kgs" placeholder="kgs" value="" id="kgs"/>
+				
+                  <label for="text-basic">reps:</label>
+                <input type="number" name="reps" id="reps" value="" placeholder="reps">  
+                    
+                    <label for="text-basic">sets:</label>
+                    <input type="number" name="sets3" id="sets" value="" placeholder="sets">
+                
+                    <button id="save" class="ui-btn ui-btn-inline">Save</button>
+            </div>
+            </div>
+        </div>
+
+        
+        <div data-role="page" id="legmuscles" data-theme="b">
+            <div data-role="header"><h1>Legs</h1></div>
+                <a href="exercise.html" id="chat" data-icon="grid" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
+        <div role="main" class="ui-content">
+            <h3>Leg Exercises</h3>
+            <div><h3>Leg press</h3>
+            <div><img src="https://www.technogym.com/wpress/wp-content/uploads/2015/06/purestrength_linearlegpress_businessuse_01.jpg" width="300" height="300" class="examplepic" />
+            </div>
+            <div><p class="description" id="muscles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+           <div class="clear">
+                <button id="expand4">Add to Workout?</button>
+              
+            </div> 
+
+            </div>   
+            
+            <div class="clear"><h3>Barbell Squats</h3>
+                <img src="http://78.media.tumblr.com/4f600b31519f513468e8cfa3003f3648/tumblr_inline_mm5b8kA7kb1qz4rgp.jpg" width="300" height="300" class="examplepic"/>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="clear">
+                <button id="expand5">Add to Workout?</button>
+                
+                </div>
+             <div class="clear"><h3>Seated Calf Raises</h3>
+                <img src="https://i.ebayimg.com/images/g/UOYAAOSwBLlU4QI4/s-l300.jpg" width="300" height="300" class="examplepic"/>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <button id="expand6">Add to Workout?</button>
+                <div id="add6">
+               <label for="text-basic">Exercise:</label>
+                <input type="text" data-mini="true" name="type2" placeholder="Name of Exercise" value="" id="type2"/>     
+                    
+            <label for="text-basic">weight:</label>
+               
+                <input type="number" data-mini="true" name="kgs2" id="kgs2" value="" placeholder="kg">
+                <label for="text-basic">reps:</label>
+                <input type="number" name="reps2" id="reps2" value="">
+                <label for="text-basic">sets:</label>
+                <input type="number" name="sets2" id="sets2" value="">
+                    
+                <button id="save2" class="ui-btn ui-btn-inline">Save</button>
+           
+                </div>           
+                    
+                </div>
+</div>
+                
+        
+        
+    <div data-role="page" id="armmuscles" data-theme="b">
+        <div data-role="header"><h1>Arms</h1></div>
+         <a href="exercise.html" id="chat" data-icon="grid" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
+        
+        <div role="main" class="ui-content">
+             <h3>Arm Exercises</h3>
+             <div><h3>Bicep Curls</h3>
+                 
+                 <div><img src="https://media1.popsugar-assets.com/files/thumbor/CA4-8zm5VgM0l6f0ccu8I8BuS5I/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/03/10/605/n/1922729/570ff954_bicep-curls-Red/i/Bicep-Curl.jpg" width="300" height="300" class="examplepic" /></div>
+            <div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p></div>
+                <div class="clear">
+                <button id="expand7">Add to Workout?</button>
+               
+                </div> 
+    
+            
+            
+            </div>
+            
+             <div class="clear"><h3>Hammer Curls</h3>
+        <img src="http://www.compoundlifts.co.uk/wp-content/uploads/arms-biceps-dumbells-biceps-hammercurls-end-8586.jpg" width="300" height="300" class="examplepic"/>
+                 <div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                 </div>
+            <div class="clear">
+                <button id="expand8">Add to Workout?</button>
+                
+                </div> 
+</div>
+            
+            
+            
+            
+             <div class="clear"><h3>Chin Ups</h3>
+        <img src="https://uploads-cdn.thgblogs.com/wp-content/uploads/sites/478/2016/07/28024642/chinups-1.jpg" width="300" height="300" class="examplepic"/>
+           <div> <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                 </div>
+             <div class="clear">
+                <button id="expand9">Add to Workout?</button>
+                <div id="add9">
+            
+                    <label for="text-basic">Exercise:</label>
+  <input type="text" data-mini="true" name="type" placeholder="Name of Exercise" value="" id="type3"/>
+                    
+                    <label for="text-basic">weight:</label>
+  <input type="number" data-mini="true" name="kgs3" placeholder="kgs" value="" id="kgs3"/>
+				
+                  <label for="text-basic">reps:</label>
+<input type="number" name="reps3" id="reps3" value="" placeholder="reps">  
+                    
+                    <label for="text-basic">sets:</label>
+<input type="number" name="sets3" id="sets3" value="" placeholder="sets">
+                <button id="save3" class="ui-btn ui-btn-inline">Save</button>
+           
+                
+                </div>
+                </div>     
+                 
+                 
+                 
+            </div>
+        </div>
+         </div>
+    
+             
+        
+       <div data-role="page" id="absmuscles" data-theme="b">
+            <div data-role="header"><h1>Abs</h1></div>
+            <a href="exercise.html" id="chat" data-icon="grid" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
+            
+           <div role="main" class="ui-content">
+             <h3>Abs Exercises</h3>
+             <div><h3>Crunches</h3>
+            <div><img src="https://media1.popsugar-assets.com/files/thumbor/4wLH98Y378C2TJ_BNsCk4YM0jrg/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/03/12/5/192/1922729/b4575d576be2157d_bicycles/i/Bicycle-Crunches.jpg" width="300" height="300" class="examplepic" /></div>
+            <div><p class="description" id="muscles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+           <div class="clear">
+                <button id="expand10">Add to Workout?</button>
+                
+                </div> 
+
+</div>   
+            
+             <div class="clear"><h3>Sit Ups</h3>
+        <img src="https://img-aws.ehowcdn.com/560x560/photos.demandstudios.com/getty/article/41/130/89681834.jpg" width="300" height="300" class="examplepic"/>
+                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                 </div>
+            <div class="clear">
+                <button id="expand11">Add to Workout?</button>
+                
+                </div>
+             <div class="clear"><h3>Planks</h3>
+        <img src="http://www.womenshealthmag.com/files/images/0906-plank.jpg" width="300" height="300" class="examplepic"/>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <button id="expand12">Add to Workout?</button>
+                <div id="add12">
+                    <label for="text-basic">Exercise:</label>
+  <input type="text" data-mini="true" name="type4" placeholder="Name of Exercise" value="" id="type4"/>
+                    
+                    <label for="text-basic">weight:</label>
+  <input type="number" data-mini="true" name="kgs4" placeholder="kgs" value="" id="kgs4"/>
+				
+                  <label for="text-basic">reps:</label>
+<input type="number" name="reps4" id="reps4" value="" placeholder="reps">  
+                    
+                    <label for="text-basic">sets:</label>
+<input type="number" name="sets4" id="sets4" value="" placeholder="sets">
+                <button id="save4" class="ui-btn ui-btn-inline">Save</button>
+           
+                </div>
+                </div>
+        
+               </div>
+         
+        <div data-role="page" id="Workouts" data-theme="b">
+        <div data-role="header"><h1>Workouts</h1></div>
+        <a href="exercise.html" id="chat" data-icon="grid" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left">Back</a>
+        <div role="main" class="ui-content">
+        
+    
+    
+        
+        
+              
+            
+
+			
+				 <h2>Chest Workout</h2>               
+                <p id="data"></p>
+            <button id="clear" class="ui-btn ui-btn-inline">Clear</button>
+            <h2>Legs Workout</h2>
+            <p id="data2"></p>
+            <button id="clear2" class="ui-btn ui-btn-inline">Clear</button>
+            <h2>Arms Workout</h2>
+            <p id="data3"></p>
+            <button id="clear3" class="ui-btn ui-btn-inline">Clear</button>
+            <h2>Abs Workout</h2>
+            <p id="data4"></p>
+            <button id="clear4" class="ui-btn ui-btn-inline">Clear</button>               
+            </div>
+
+		    	
+        </div>
+     
+        
+             
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+ 
+          $(document).on("pagecreate", function() {
+            $(document).on("pagecontainershow", function(){
+                $(".ui-content").height(getRealContentHeight());
+            })
+               
+            $(window).on("resize orientationchange", function(){
+                $(".ui-content").height(getRealContentHeight());
+            })
+            
+            function getRealContentHeight() {
+                var activePage = $.mobile.pageContainer.pagecontainer("getActivePage"),
+                screen = $.mobile.getScreenHeight(),
+                header = $(".ui-header").hasClass("ui-header-fixed") ? $(".ui-header").outerHeight() - 1 : $(".ui-header").outerHeight(),
+                footer = $(".ui-footer").hasClass("ui-footer-fixed") ? $(".ui-footer").outerHeight() - 1 : $(".ui-footer").outerHeight(),
+                contentMargins = $(".ui-content", activePage).outerHeight() - $(".ui-content", activePage).height();
+                var contentHeight = screen - header - footer - contentMargins;    
+                
+                return contentHeight;
+            }
+            
+              
+              $("#two").hide();
+              $("#one").hide();
+        });
+        
+        
+        $("#expand1").click(function(){
+            $('#type').val("Barbell Bench Press");
+        });
+     
+        $("#expand2").click(function(){
+            $('#type').val("Pressups");
+        });
+        $("#expand3").click(function(){
+            $('#type').val("Incline Dumbell Press");
+        });
+         $("#expand4").click(function(){
+            $('#type2').val("Leg Press");
+        });
+         $("#expand5").click(function(){
+            $('#type2').val("Barbell Squats");
+        });
+         $("#expand6").click(function(){
+            $('#type2').val("Seated Calf Raises");
+        });
+         $("#expand7").click(function(){
+            $('#type3').val("Bicep Curls");
+        });
+         $("#expand8").click(function(){
+            $('#type3').val("Hammer Curls");
+        });
+         $("#expand9").click(function(){
+            $('#type3').val("Chin Ups");
+        });
+         $("#expand10").click(function(){
+            $('#type4').val("Crunches");
+        });
+         $("#expand11").click(function(){
+            $('#type4').val("Sit Ups");
+        });
+         $("#expand12").click(function(){
+            $('#type4').val("Planks");
+        });
+        
+
+            var storage = window.localStorage;
+
+            
+            $('#save').click(function() {
+                var todo = {type : $('#type').val(), kgs :  $('#kgs').val(), reps :  $('#reps').val(), sets : $('#sets').val()};
+                storage.setItem(todo.type, JSON.stringify(todo));
+                counter++;
+
+                var htmlData = "<ul id='datalist'>";
+                $('#datalist').empty();
+                for (var i = 0; i < storage.length; i++){
+                    var todoItem = storage.getItem(storage.key(i));
+                    var item = JSON.parse(todoItem);
+                    htmlData += "<li>" + item.type + " " + item.kgs + "kgs " + item.reps + "reps " + item.sets + "sets " + "</li>"; 
+                }
+                htmlData += "</ul>";
+
+                $('#data').html(htmlData);
+                
+            }); 
+        
+
+            
+            $('#clear').click(function() {
+                storage.clear();
+                counter = 0;
+                $('#data').html('');
+
+            });
+        
+        
+        
+                    $('#save2').click(function() {
+                var todo2 = {type2 : $('#type2').val(), kgs2 :  $('#kgs2').val(), reps2 :  $('#reps2').val(), sets2 : $('#sets2').val()};
+                storage.setItem(todo2.type2, JSON.stringify(todo2));
+                counter++;
+
+                var htmlData2 = "<ul id='datalist2'>";
+                $('#datalist2').empty();
+                for (var i = 0; i < storage.length; i++){
+                    var todoItem2 = storage.getItem(storage.key(i));
+                    var item2 = JSON.parse(todoItem2);
+                    htmlData2 += "<li>" + item.type2 + " " + item.kgs2 + "kgs " + item.reps2 + "reps " + item.sets2 + "sets " + "</li>"; 
+                }
+                htmlData2 += "</ul>";
+
+                $('#data2').html(htmlData2);
+            }); 
+        
+
+            
+            $('#clear2').click(function() {
+                storage.clear();
+                counter = 0;
+                $('#data2').html('');
+
+            });
+        
+          
+      
+        
+          
+            
+   
+
+     $("#expand1").on('click', function(){
+    $("#add3").show();
+}); 
+     $("#expand2").on('click', function(){
+    $("#add3").show();
+}); 
+       $("#add3").hide(); 
+         $("#expand3").on('click', function(){
+    $("#add3").show();
+}); 
+     $("#expand3").on('dblclick', function(){
+    $("#add3").hide();
+});         
+        
+         $("#expand4").on('click', function(){
+    $("#add6").show();
+}); 
+               $("#expand5").on('click', function(){
+    $("#add6").show();
+}); 
+             $("#expand6").on('click', function(){
+    $("#add6").show();
+}); 
+        $("#add6").hide();
+              $("#expand6").on('dblclick', function(){
+    $("#add6").hide();
+}); 
+              $("#expand7").on('click', function(){
+    $("#add9").show();
+}); 
+              $("#expand8").on('click', function(){
+    $("#add9").show();
+}); 
+        
+               $("#expand9").on('click', function(){
+    $("#add9").show();
+}); 
+        $("#add9").hide();
+              $("#expand9").on('dblclick', function(){
+    $("#add9").hide();
+}); 
+              $("#expand10").on('click', function(){
+    $("#add12").show();
+}); 
+              $("#expand11").on('click', function(){
+    $("#add12").show();
+}); 
+        
+           $("#expand12").on('click', function(){
+    $("#add12").show();
+});
+        $("#add12").hide();
+              $("#expand12").on('dblclick', function(){
+    $("#add12").hide();
+}); 
+  
+        
+        
+        
+        
+        
+  app.initialize();
+       
+    </script>
+</body>
+
+</html>
